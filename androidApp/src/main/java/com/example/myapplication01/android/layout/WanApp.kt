@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -40,7 +42,18 @@ internal fun TopBar(title: String, onProfileClick: () -> Unit) {//标题,左侧�
         IconButton(onClick = onProfileClick) {
             Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = "返回")
         }
-    })
+    }
+        //    , actions = {
+//        IconButton(onClick = { } //do something
+//        ) {
+//            Icon(Icons.Filled.Search, null)
+//        }
+//        IconButton(onClick = { } //do something
+//        ) {
+//            Icon(Icons.Filled.MoreVert, null)
+//        }
+//    }
+    )
 }
 
 @Composable
